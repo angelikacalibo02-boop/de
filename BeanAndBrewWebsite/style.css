@@ -1,0 +1,8 @@
+/* style.css */
+body {font-family: 'Roboto', sans-serif; margin:0; padding:0; background:#f8f8f8;}
+.navbar {background:#8B4513; padding:1rem; color:#fff;}
+.nav-menu {list-style:none; display:flex; gap:1rem;}
+.nav-menu li a {color:#fff; text-decoration:none;}
+.cta-button {background:#D2691E; color:#fff; padding:0.5rem 1rem; border:none; cursor:pointer;}
+.products-grid {display:grid; grid-template-columns:repeat(3,1fr); gap:1rem;}
+.cart-summary {background:#fff; padding:1rem; margin-top:1rem;}
