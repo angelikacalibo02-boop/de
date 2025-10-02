@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Login - Bean & Brew</title>
+     <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="style.css">
+     <!-- Removed redundant empty stylesheet links -->
+ </head>
+ <body>
+     <header>
+         <nav class="navbar">
+             <div class="nav-container">
+                 <a href="index.html" class="logo">Bean & Brew</a>
+                 <ul class="nav-menu">
+                     <li><a href="index.html">Home</a></li>
+                     <li><a href="products.html">Products</a></li>
+                     <li><a href="about.html">About Us</a></li>
+                     <li><a href="contact.html">Contact</a></li>
+                     <li><a href="cart.html" id="cart-link" class="cart-icon"><i class="fas fa-shopping-cart"></i> (<span
+                                 id="cart-count">0</span>)</a></li>
+                     <li><a href="login.html" class="login-link active"><i class="fas fa-user"></i> Login</a></li>
+                 </ul>
+                 <div class="hamburger">
+                     <span></span>
+                     <span></span>
+                     <span></span>
+                 </div>
+             </div>
+         </nav>
+     </header>
+     <main>
+         <section class="auth-section">
+             <div class="container">
+                 <div class="auth-form-card">
+                     <h2>Welcome Back!</h2>
+                     <form id="login-form" class="auth-form">
+                         <div class="form-group">
+                             <label for="login-email">Email Address</label>
+                             <input type="email" id="login-email" name="email" required>
+                         </div>
+                         <div class="form-group">
+                             <label for="login-password">Password</label>
+                             <input type="password" id="login-password" name="password" required>
+                         </div>
+                         <button type="submit" class="cta-button auth-button">Login</button>
+                         <p class="form-link">Forgot your password? <a href="#">Reset it here</a></p>
+                         <p class="form-link">Don't have an account? <a href="register.html">Register now</a></p>
+                     </form>
+                     <div class="social-login-options">
+                         <p>Or login with:</p>
+                         <button class="social-btn google-btn" aria-label="Login with Google"><i
+                                 class="fab fa-google"></i> Login with Google</button>
+                         <button class="social-btn facebook-btn" aria-label="Login with Facebook"><i
+                                 class="fab fa-facebook-f"></i> Login with Facebook</button>
+                     </div>
+                 </div>
+             </div>
+         </section>
+     </main>
+     <footer>
+         <div class="container">
+             <p>&copy; 2025 Bean & Brew. All rights reserved.</p>
+             <div class="social-links">
+                 <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                 <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                 <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+             </div>
+         </div>
+     </footer>
+     <script src="js/script.js"></script>
+ </body>
+ </html>

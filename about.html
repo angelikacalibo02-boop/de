@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - Bean & Brew</title>
+    <link rel="stylesheet" href="style.css">
+<l    ink href="https:/m/css2?family=Playfair+Display:wght@700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="index.html" class="logo">Bean & Brew</a>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="cart.html" id="cart-link" class="cart-icon"><i class="fas fa-shopping-cart"></i> (<span id="cart-count">0</span>)</a></li>
+                    <li><a href="login.html" class="login-link"><i class="fas fa-user"></i> Login</a></li>
+                 <li><a href="services.html">Services</a></li>
+        <li><a href="product.html">Product</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="cart-section">
+            <div class="container">
+                <h2>Your Shopping Cart</h2>
+                <div id="cart-items-container">
+                    <!-- Cart items will be loaded here by JavaScript -->
+                    <p>Your cart is empty.</p>
+                </div>
+
+                <div class="cart-summary">
+                    <div class="discount-section">
+                        <label for="promo-code">Promo Code:</label>
+                        <input type="text" id="promo-code" placeholder="Enter promo code">
+                        <button class="apply-btn">Apply</button>
+                    </div>
+                    <div class="subtotal-info">
+                        <p>Subtotal: $<span id="cart-subtotal">0.00</span></p>
+                        <p>Shipping: $<span id="cart-shipping">0.00</span></p>
+                        <h3>Total: $<span id="cart-total">0.00</span></h3>
+                    </div>
+                    <button id="checkout-btn" class="cta-button">Proceed to Checkout</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Bean & Brew. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
